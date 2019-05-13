@@ -9,7 +9,7 @@ package odd.even.sort;
  *
  * @author 030112096
  */
-public class Elemento implements Comparable {
+public class Elemento {
     
     private String matricula;
     private String nome;
@@ -19,7 +19,6 @@ public class Elemento implements Comparable {
         this.nome = nome;
     }
     
-    @Override
     public int compareTo(Object o){
         Elemento e = (Elemento)o;
         return this.matricula.compareTo(e.matricula);
