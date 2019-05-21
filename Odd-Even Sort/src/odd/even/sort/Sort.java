@@ -11,7 +11,7 @@ package odd.even.sort;
  */
 public class Sort {
     
-    public static long[] oddEvenSort(Elemento[] vet){
+    public static long[] oddEvenSort(Comparable[] vet){
         long[] variaveis = {0,0};
         boolean ordenado = false;
         while(!ordenado){
@@ -20,7 +20,7 @@ public class Sort {
                 variaveis[0]++;
                 if(vet[i].compareTo(vet[i+1]) > 0){
                     variaveis[1]++;
-                    Elemento aux = vet[i];
+                    Comparable aux = vet[i];
                     vet[i] = vet[i+1];
                     vet[i+1] = aux;
                     ordenado = false;
@@ -30,7 +30,7 @@ public class Sort {
                 variaveis[0]++;
                 if(vet[j].compareTo(vet[j+1]) > 0){
                     variaveis[1]++;
-                    Elemento aux = vet[j];
+                    Comparable aux = vet[j];
                     vet[j] = vet[j+1];
                     vet[j+1] = aux;
                     ordenado = false;
