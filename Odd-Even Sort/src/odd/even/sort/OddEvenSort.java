@@ -33,7 +33,7 @@ public class OddEvenSort {
         Elemento[] vet = lista.toArray(new Elemento[lista.size()]);
         lista.clear();
         resultados = Sort.oddEvenSort(vet);
-        System.out.println("NOME      | MATRÍCULA");
+        System.out.println("MATRÍCULA | NOME");
         System.out.println("---------------------------------------------------");
         for(Elemento e : vet){
             System.out.println(e.getMatricula()+" | "+e.getNome());
